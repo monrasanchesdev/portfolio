@@ -1,22 +1,4 @@
 /* ============================
-   DESIGN TOKENS
-============================ */
-
-:root {
-    --cor-primaria: #000000;
-    --cor-secundaria: #F6F6F6;
-    --cor-terciaria: #22D4FD;
-
-    --container-max: 75rem;
-    --container-min: 25rem;
-
-    --font-title:"KronaOne", sans-serif;
-    --font-body: "MontSerrat", sans-serif;
-
-    --radius-lg: 0.5rem;
-}
-
-/* ============================
    FONTES
 ============================ */
 
@@ -46,6 +28,25 @@
 
 
 /* ============================
+   DESIGN TOKENS
+============================ */
+
+:root {
+    --cor-primaria: #000000;
+    --cor-secundaria: #F6F6F6;
+    --cor-terciaria: #22D4FD;
+
+    --container-max: 75rem;
+    --container-min: 25rem;
+
+    --font-title:"KronaOne", sans-serif;
+    --font-body: "MontSerrat", sans-serif;
+
+    --radius-lg: 0.5rem;
+}
+
+
+/* ============================
    RESET
 ============================ */
 
@@ -57,16 +58,17 @@
   box-sizing: border-box;
 }
 
+/* 5. Estilos Gerais */
+
 html {
     font-size: 16px;
 }
 
 body {
-    /* height: 100vh;     */
+    min-height: 100vh;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    min-height: 100vh;
+    align-items: center;   
     min-width: var(--container-min);
     background-color: var(--cor-primaria);
     color: var(--cor-secundaria);
@@ -80,7 +82,7 @@ header {
 
 .navegacao {
     display: flex;
-    justify-content: space-between;
+    /* justify-content: center; */
     gap: 10rem;
     align-items: center;
     margin: 0 auto;
@@ -199,8 +201,9 @@ main {
 
 @media (max-width: 1024px) {
 
-    .cabecalho__menu {
-        padding: 2rem 1rem;
+    .navegacao {
+        padding: 2rem 1rem; 
+        max-width: 25rem;
     }
 
 
