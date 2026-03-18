@@ -60,16 +60,13 @@
 
 /* 5. Estilos Gerais */
 
-html {
-    font-size: 16px;
-}
 
 body {
-    min-height: 100vh;
+    min-height: 100dvh;
+    min-width: var(--container-min);
     display: flex;
     flex-direction: column;
     align-items: center;   
-    min-width: var(--container-min);
     background-color: var(--cor-primaria);
     color: var(--cor-secundaria);
     font-family: var(--font-body);
@@ -108,7 +105,7 @@ main {
     justify-content: space-between;
     width: 100%;
     max-width: var(--container-max);
-    padding: 3rem 2rem;
+    padding: 0rem 2rem 3rem 2rem;
     gap: 4rem;
 }
 
@@ -174,6 +171,7 @@ main {
     text-decoration: none;
     border-radius: var(--radius-lg);
     padding: 21.5px 0;
+    color: #F6F6F6;
     font-family: var(--font-body);
     font-weight: 600;
     transition: background-color 0.3 ease, transform 0.2 ease;
@@ -185,7 +183,7 @@ main {
 
 .rodape {
     width: 100%;
-    padding: 1.5rem;
+    padding: 1px;
     color: #000000;
     background-color: #22D4FD;
     text-align: center;
